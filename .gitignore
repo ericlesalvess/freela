@@ -1,0 +1,14 @@
+db/
+/node_modules
+/vendor
+/.env
+/storage/*.key
+/public/hot
+/public/storage
+/Homestead.json
+/Homestead.yaml
+/docker-compose.yml
+/.dockerignore
+/.idea
+/docker-compose.override.yml
+.phpunit.result.cache
