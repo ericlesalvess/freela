@@ -1,4 +1,6 @@
-export default function Article() {
+import React from 'react';
+
+export default function Article({text, title, url}) {
     return (
 
 <article
@@ -13,18 +15,16 @@ export default function Article() {
   <div class="p-4 sm:p-6">
     <a href="#">
       <h3 class="text-lg font-medium text-gray-900 dark:text-white">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        {title}
       </h3>
     </a>
 
-    <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500 dark:text-gray-400">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-      pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem,
-      mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque
-      dignissimos. Molestias explicabo corporis voluptatem?
+    <p className=" mt-2 line-clamp-3 text-sm/relaxed text-gray-500 dark:text-gray-400">
+    {text}
+   
     </p>
 
-    <a href="#" class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
+    <a href={url} class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
       Find out more
 
       <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
