@@ -14,7 +14,8 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // User::factory(10)->create();
-
+        $this->call(EmpresaSeeder::class);
+        $this->call(VagaSeeder::class); // Adicione seu VagaSeeder aqui
         User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
