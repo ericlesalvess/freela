@@ -17,4 +17,4 @@ ENV PHP_EXTENSIONS="gd"
 
 # COPY ./php.ini /usr/local/etc/php/conf.d/custom.ini
 
-ENV APACHE_DOCUMENT_ROOT=public/cd
+ENV APACHE_DOCUMENT_ROOT=public
